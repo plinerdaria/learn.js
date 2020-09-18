@@ -69,3 +69,61 @@
 //   };
 // }
 // console.log(groups);
+
+// let user = {
+//   name: "Джон",
+//   age: 30,
+
+//   sayHi() {
+//     // this - это "текущий объект"
+//     console.log(user.name);
+//     console.log(this.name);
+//   },
+// };
+// user.sayHi();
+// let admin = { ...user };
+// admin.name = "admin";
+// admin.sayHi();
+// console.log(admin.sayHi);
+
+// (function sayHi() {
+//   console.log(this.name);
+//   console.log(this);
+// })();
+
+// Создайте объект calculator (калькулятор) с тремя методами:
+
+// read() (читать) запрашивает два значения и сохраняет их как свойства объекта.
+// +1 создаем функцию
+// +2 запрашиваем и сохраняем 2 значения
+// 3 записываем их как свойства объекта
+// sum() (суммировать) возвращает сумму сохранённых значений.
+// mul() (умножить) перемножает сохранённые значения и возвращает результат.
+// let calculator = {
+//   // ... ваш код ...
+// };
+
+// calculator.read();
+// alert( calculator.sum() );
+// alert( calculator.mul() );
+
+// let calculator = {
+//   read() {
+//     let question = prompt("Введите число", 3);
+//     let anotherQuestion = prompt("Введите число", 10);
+//     calculator.value1 = question;
+//     calculator.value2 = anotherQuestion;
+//   },
+//   sum() {
+//     return Number(this.value1) + Number(this.value2);
+//   },
+//   mul() {
+//     return this.value1 * this.value2;
+//   },
+// };
+// console.log(calculator.read());
+// alert(calculator.sum());
+// alert(calculator.mul());
+// console.log(calculator.sum());
+// console.log(calculator.mul());
+// console.log(calculator);
